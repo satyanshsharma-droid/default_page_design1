@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width" , initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style2.css">
+
+</head>
+
+
+<body>
+    <div class="cont">
+        <div class="box">
+            <div class="butbox">
+                <div id="but"></div>
+                <button type="button" class="toggle-btn" onclick= "login()"><p>LOGIN<p></button>
+                <button type="button" class="toggle-btn" onclick="register()"><p>REGISTER<p></button>
+            </div>
+            <div class="icons">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <ion-icon name="logo-youtube"></ion-icon>
+                <ion-icon name="logo-sass"></ion-icon>
+            </div>
+            <form id="login" class="input-grp">
+                <input type="text" class="ip-field" placeholder="User ID" required>
+                <input type="text" class="ip-field" placeholder="Enter passward" required>
+                <input type="checkbox" class="checkbox"> 
+                <span>Remember me</span>
+                <button type="submit" class="submit">submit</button>
+            </form>
+
+            <form id="register" class="input-grp">
+                <input type="text" class="ip-field" placeholder="User ID" required>
+                <input type="text" class="ip-field" placeholder="Email ID" required>
+                <input type="text" class="ip-field" placeholder="Enter passward" required>
+                <input type="checkbox" class="checkbox"> 
+                <span>I agree</span>
+                <button type="submit" class="submit">REGISTER</button>
+            </form>
+
+
+
+        </div>
+    </div>
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("but");
+
+        function register() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0px";
+        }
+    
+    </script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

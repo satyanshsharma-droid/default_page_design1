@@ -1,0 +1,213 @@
+:root {
+    background: var(--main-background-image--);
+    --typewriter-speed: 6s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav {
+    display: flex;
+    background: linear-gradient(to right, #1a1a1a 10%, #414141 100%);
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif;
+    font-weight: 100;
+
+}
+
+nav .logo {
+    font-size: 35px;
+    background: -webkit-linear-gradient(bottom right, #00c932, rgb(252, 239, 239), #f87000);
+    background-clip: none;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin: 10px 21px 17px 14px;
+    padding: 0 0 0 0;
+    ;
+    letter-spacing: 2.3px;
+}
+
+nav ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    height: 80px;
+    color: rgb(247, 247, 247);
+
+}
+
+nav ul li {
+    margin: 23px 100px 30px 16px;
+    padding: 0 0px 0 0;
+    color: rgb(255, 255, 255);
+    justify-content: left;
+    list-style: none;
+    text-decoration: none;
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+nav ul li :hover {
+    color: rgb(1, 219, 248);
+    text-decoration: none;
+}
+
+.cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('taj3.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section {
+
+    text-align: center;
+}
+
+section h3 {
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 3px;
+}
+
+section h1 {
+    margin: 10px 0 10px 0;
+    font-size: 55px;
+    font-weight: 700px;
+    letter-spacing: 2px;
+    text-shadow: 2px 1px 5px;
+    position: relative;
+}
+
+.contain {
+    background-color: aliceblue;
+}
+
+section p {
+
+    /* background-color: aliceblue; */
+    font-family: 'Anton', sans-serif, monospace;
+    letter-spacing: 3px;
+    font-size: 20px;
+    font-weight: 100px;
+    text-shadow: 1px 1px 3px;
+    position: relative;
+    outline: 2px solid rgb(255, 255, 255);
+    width: max-content;
+    animation: colors;
+}
+
+section p::before,
+section p::after {
+
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+}
+
+section p::before {
+ background-color: aliceblue;
+    animation: typewriter 6s steps(26) 1s forwards;
+
+}
+
+section p::after {
+    width: 0.125em;
+    background-color: rgb(0, 0, 0);
+    animation: typewriter 6s steps(26)1s forwards , blink 800ms steps(26)  infinite;
+    overflow: hidden;
+    
+}
+
+@keyframes typewriter {
+    to {
+        left: 100%;
+     }
+    
+    
+}
+
+@keyframes blink {
+    to {
+        background: transparent;
+    }}
+    
+    
+
+
+
+section a {
+    margin: 2px 10px 7px 0px;
+    padding: 1px 12px 0px 29px;
+    font-size: 20px;
+    font-weight: 100px;
+    letter-spacing: 1px;
+    outline: none;
+    font-style: bold;
+    color: aliceblue;
+    font-family: monospace;
+}
+
+.but1 :hover {
+    color: rgb(255, 0, 242);
+    text-decoration: none;
+}
+
+.but2 :hover {
+    color: rgb(51, 255, 0);
+    text-decoration: none;
+}
+
+.b {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 0 0 0;
+}
+
+section .but1 {
+    display: flex;
+    justify-content: center;
+    border-radius: 5px;
+    text-transform: lowercase;
+    background-color: rgba(0, 183, 255, 0.6);
+    border: 10px;
+    margin: 41px 20px 0 0;
+}
+
+section .but2 {
+    display: flex;
+    align-content: center;
+    text-transform: lowercase;
+    border-radius: 5px;
+    background-color: rgba(36, 0, 241, 0.6);
+    margin: 41px 20px 0 0;
+}
+
+/* .cont {
+    
+    background-color: aqua;
+} */
+
+footer {
+    text-align: center;
+    background: linear-gradient(to right, #1a1a1a 10%, #494949 100%)
+}
